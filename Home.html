@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Katli’s Candy Shop • Home</title>
+<meta name="description" content="Katli’s Candy Shop — high-quality sweets made with love in Johannesburg. Online and in-store across South Africa." />
+<link rel="icon" href="CartoonCandy.jpg" />
+<style>
+    :root {
+        --deep-sapphire: #0F52BA;
+        --storm-blue: #4A90E2;
+        --frosted-sky: #E6F2FF;
+        --candy-pink: #F06292;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', Arial, sans-serif;
+        background: var(--frosted-sky);
+        color: #0F2940;
+    }
+
+    header {
+        background: var(--storm-blue);
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 0.5rem;
+        color: var(--frosted-sky);
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        color: var(--frosted-sky);
+        text-decoration: none;
+        margin: 0 0.75rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        color: var(--candy-pink);
+        text-shadow: 0 0 6px rgba(240,98,146,0.5);
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        color: var(--deep-sapphire);
+        font-size: 2rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-header h2::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 4px;
+        background: var(--candy-pink);
+        margin: 0.5rem auto 0;
+        border-radius: 2px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        padding: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(15,82,186,0.25);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+    }
+
+    blockquote {
+        font-style: italic;
+        color: var(--deep-sapphire);
+        border-left: 5px solid var(--candy-pink);
+        padding-left: 1rem;
+        background: linear-gradient(to right, var(--frosted-sky), #fff0f6);
+        border-radius: 6px;
+        margin: 1rem 0;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+
+    ul li::before {
+        content: "🍬";
+        position: absolute;
+        left: 0;
+        color: var(--candy-pink);
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: var(--storm-blue);
+        color: var(--frosted-sky);
+    }
+
+    footer a {
+        color: var(--frosted-sky);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    footer a:hover {
+        color: var(--candy-pink);
+        text-decoration: underline;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 2rem 0;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🍭 Katli’s Candy Shop</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="our treats.html">Our Treats</a>
+        <a href="visit & Contact.html">Visit & Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Intro -->
+    <section id="intro">
+        <div class="section-header">
+            <h2>Welcome to a World of Sweetness & Nostalgia</h2>
+        </div>
+        <p style="text-align:center;">Handcrafted candies made with the finest ingredients — from tangy sour sweets to delightful liquorice sticks and modern confections.</p>
+    </section>
+
+    <!-- Our Story -->
+    <section id="about">
+        <div class="section-header">
+            <h2>Our Story</h2>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <img src="image/colorful.WEBP" alt="Katli’s Candy Shop Logo">
+                <p>Founded in 2022 by <strong>Katli Oliphant</strong>, our home-based venture quickly grew into a beloved candy shop in Johannesburg, serving sweet lovers across South Africa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section id="mission-vision">
+        <div class="card-grid">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <blockquote>“To spread happiness, one sweet at a time by creating irresistible, high-quality candies that delight our customers and celebrate the joy of life.”</blockquote>
+            </div>
+            <div class="card">
+                <h3>Our Vision</h3>
+                <blockquote>“To be South Africa’s most loved and trusted candy shop, known for innovation, quality, and bringing communities together through the universal language of sweetness.”</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section id="values">
+        <div class="section-header">
+            <h2>Core Values</h2>
+        </div>
+        <ul>
+            <li><strong>Quality First:</strong> Finest ingredients for every treat.</li>
+            <li><strong>Local Love:</strong> Support local suppliers & artisans.</li>
+            <li><strong>Joy & Nostalgia:</strong> Sweet memories in every bite.</li>
+            <li><strong>Innovation:</strong> Blend tradition with creativity.</li>
+            <li><strong>Community:</strong> Bring people together through sweetness.</li>
+        </ul>
+    </section>
+
+    <!-- Treats -->
+    <section id="treats">
+        <div class="section-header">
+            <h2>Our Treats</h2>
+        </div>
+        <div class="card-grid">
+            <div class="card"><img src="image/download.jpg" alt="Sour Sweets"><p>Sour Sweets — a zingy, handmade classic.</p></div>
+            <div class="card"><img src="image/too.WEBP" alt="Liquorice"><p>Liquorice Sweet Sticks — chewy & nostalgic.</p></div>
+            <div class="card"><img src="image/ist.jpg" alt="Traditional"><p>Traditional Favorites — toffees, hard candies, more.</p></div>
+            <div class="card"><img src="image/ima.jpg" alt="Modern"><p>Modern Confections — creative, limited editions.</p></div>
+            <div class="card"><img src="image/OIPp.WEBP" alt="Gift Boxes"><p>Gift Boxes & Party Packs — perfect for sharing joy.</p></div>
+        </div>
+    </section>
+
+    <!-- Visit & Contact -->
+    <section id="visit">
+        <div class="section-header">
+            <h2>Visit & Contact</h2>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <img src="image/pngtree.jpg" alt="Store">
+                <p><strong>Store:</strong> Johannesburg (City Centre)<br>
+                   <strong>Hours:</strong> Mon–Sat 9:00–18:00, Sun 10:00–16:00<br>
+                   <strong>Phone:</strong> <a href="tel:+27-000-000-0000">+27 00 000 0000</a><br>
+                   <strong>Email:</strong> <a href="mailto:hello@katliscandy.co.za">hello@katliscandy.co.za</a></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> Katli’s Candy Shop · Proudly made in South Africa</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
+

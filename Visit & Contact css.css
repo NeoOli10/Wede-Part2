@@ -1,0 +1,142 @@
+:root {
+    --blue: #4A90E2;
+    --pink: #F06292;
+    --light-bg: #E6F2FF;
+    --dark-text: #0F2940;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+header {
+    background: var(--blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--dark-text);
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.contact-card, .form-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover, .form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.contact-card a {
+    color: var(--dark-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--pink);
+}
+
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+
+footer {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--pink);
+}
